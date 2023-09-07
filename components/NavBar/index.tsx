@@ -51,7 +51,7 @@ export function Navbar() {
 
         {isOpen && (
           <div className='justify-end flex h-screen absolute w-full bg-transparent'> 
-          <div className={`h-screen w-[70%] grid justify-center bg-white bg-opacity-5 backdrop-blur-3xl ${styles.nav}`}>
+          <div className={`h-screen w-[70%] grid justify-center bg-white text-white bg-opacity-5 backdrop-blur-3xl ${styles.nav}`}>
             <ul className='pt-28'>
               <li className='py-4 text-base font-normal tracking-widest'>
                 <Link href={'./'} onClick={CloseNavbar}><strong className='px-3 text-base font-bold'>00 </strong> Home </Link>
@@ -81,27 +81,27 @@ export function Navbar() {
                 <Image src={Logo} alt='Logo' width={48} height={48}/>
               </Link>
             </div>
-            <div className={` w-[70%] flex justify-center bg-white bg-opacity-5 backdrop-blur-3xl p-4`}>
+            <div className={` w-[70%] flex justify-center bg-white text-white bg-opacity-5 backdrop-blur-3xl p-4`}>
             <ul className='flex justify-between gap-8'>
-              <li className='py-4 text-base font-normal tracking-widest cursor-pointer'>
+              <li className='py-4 text-lg font-normal tracking-widest cursor-pointer'>
                 <Link href={'./'} onClick={CloseNavbar} className={
               pathname === "/" ? "border-b-[2px] border-white pb-7" : ""
             }><strong className='px-3  text-base font-bold'>00 </strong> Home </Link>
               </li>
 
-              <li className='py-4 text-base font-normal tracking-widest'>
+              <li className='py-4 text-lg font-normal tracking-widest'>
                 <Link href={"/destination"} onClick={CloseNavbar} className={
               pathname === "/destination" ? "border-b-[2px] border-white pb-7" : ""
             }><strong className='px-3 font-bold'>01 </strong> Destination </Link>
               </li>
 
-              <li className='py-4 text-base font-normal tracking-widest cursor-pointer'>
+              <li className='py-4 text-lg font-normal tracking-widest cursor-pointer'>
                 <Link href={"/crew"} className={
               pathname === "/crew" ? "border-b-[2px] border-white pb-7" : ""
             }><strong className='px-3 font-bold'>02 </strong> Crew </Link>
               </li>
 
-              <li className='py-4 text-base font-normal tracking-widest cursor-pointer'>
+              <li className='py-4 text-lg font-normal tracking-widest cursor-pointer'>
                 <Link href={"/technology"} className={
               pathname === "/technology" ? "border-b-[2px] border-white pb-7" : ""
             }><strong className='px-3 font-bold'>03 </strong> Technology </Link>

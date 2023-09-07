@@ -130,7 +130,7 @@ export function Crew() {
       <div className='flex justify-between md:justify-evenly px-3 lg:px-20 h-fit group'>
       <div
     onClick={() => handleCrewMemberClick('Commander')}
-    className={`w-6 h-6 lg:w-8 lg:h-8 rounded-full border border-white cursor-pointer transition duration-300 ease-in-out ${
+    className={`w-6 h-6 lg:w-8 lg:h-8 rounded-full border  border-white cursor-pointer transition duration-300 ease-in-out ${
       selectedCrew === 'Commander' ? 'bg-white' : ''
     }`}
   ></div>

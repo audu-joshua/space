@@ -51,8 +51,8 @@ export function Destination() {
         setSelectedLoaction(location);
     }
 
-    const SelectedLabelClass = 'border-b-2 border-white border-solid'
-    const UnelectedClassLabel = 'cursor-pointer'
+    const SelectedLabelClass = 'border-b-2 border-white border-solid text-white'
+    const UnelectedClassLabel = 'cursor-pointer text-white'
 
     const Styles = {
         bgImageMobile:{
