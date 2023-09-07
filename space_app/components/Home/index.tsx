@@ -42,7 +42,7 @@ export function HomeBody() {
         }
     };
 
-    //Add Event Listener to Track Window's Resize
+    //Add Event Listener to Track Window's Resizekd
     window.addEventListener('resize', handleResize);
     // Initialize Check on Component Mount
     handleResize();
