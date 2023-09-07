@@ -75,7 +75,7 @@ export function Navbar() {
 
         {/* Tablet and Desktop Menu */}
 
-        <div className='md:flex fixed w-full justify-between bg-none hidden z-[10]'>
+        <div className='md:flex fixed w-full justify-between mt-4 bg-none hidden z-[10]'>
             <div className='p-4'>
               <Link href={'/'} className='cursor-pointer'>
                 <Image src={Logo} alt='Logo' width={48} height={48}/>
