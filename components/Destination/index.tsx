@@ -145,14 +145,14 @@ export function Destination() {
         <div className='
         grid gap-0.5'>
         <p className='text-[14px] text-[#D0D6F9] md:text-lg'>AVG. DISTANCE:</p>
-            <div className='text-[28px] md:text-3xl'> 
+            <div className='text-[28px] md:text-3xl text-white'> 
             {locationInfo[selectedLocation].averageDistance}
             </div>
         </div>
         
         <div className='grid gap-0.5'>
         <p className='uppercase text-[#D0D6F9] md:text-lg'>EST. TRAVEL Time: </p>
-            <div className='text-[28px] md:text-3xl'> 
+            <div className='text-[28px] md:text-3xl text-white'> 
                 {locationInfo[selectedLocation].estimatedTravelTime} 
             </div>
         </div>
