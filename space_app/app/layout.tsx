@@ -1,9 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import {Bellefair} from 'next/font/google'
 import { Navbar } from '@/components/NavBar'
 
-const inter = Inter({ subsets: ['latin'] })
+const bellefair = Bellefair({ subsets: ['latin'], weight: '400', display: 'swap' })
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={bellefair.className}>
         <Navbar />
         {children}
       </body>

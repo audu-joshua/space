@@ -1,0 +1,17 @@
+.nav {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 0%;
+    }
+  
+    to {
+      margin-left: 30%;
+      width: 90%;
+    }
+  }
+  
