@@ -44,14 +44,14 @@ export function Navbar() {
                 <Image src={Logo} alt='Logo'/>
               </Link>
             </div>
-            <div className='text-4xl' onClick={toggleMenu}>
+            <div className='text-4xl text-white' onClick={toggleMenu}>
               {isOpen ? <FaTimes/> : <FaBars/> }    
             </div>  
         </div>
 
         {isOpen && (
           <div className='justify-end flex h-screen absolute w-full bg-transparent'> 
-          <div className={`h-screen w-[70%] grid justify-center bg-white text-white bg-opacity-5 backdrop-blur-3xl ${styles.nav}`}>
+          <div className={`h-screen w-[70%] grid justify-center bg-white text-white bg-opacity-0 backdrop-blur-[70px] ${styles.nav}`}>
             <ul className='pt-28'>
               <li className='py-4 text-base font-normal tracking-widest'>
                 <Link href={'./'} onClick={CloseNavbar}><strong className='px-3 text-base font-bold'>00 </strong> Home </Link>
@@ -62,11 +62,11 @@ export function Navbar() {
               </li>
 
               <li className='py-4 text-base font-normal tracking-widest'>
-                <Link href={"/crew"}><strong className='px-3 font-bold'>02 </strong> Crew </Link>
+                <Link href={"/crew"} onClick={CloseNavbar}><strong className='px-3 font-bold'>02 </strong> Crew </Link>
               </li>
 
               <li className='py-4 text-base font-normal tracking-widest'>
-                <Link href={"/technology"}><strong className='px-3 font-bold'>03 </strong> Technology </Link>
+                <Link href={"/technology"} onClick={CloseNavbar}><strong className='px-3 font-bold'>03 </strong> Technology </Link>
               </li>
             </ul>
           </div>
