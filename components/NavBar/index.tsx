@@ -24,7 +24,6 @@ const barlow = Barlow_Condensed({subsets: ['latin'], weight:'400'})
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const router = usePathname();
   const toggleMenu = () =>{
     setIsOpen(!isOpen);
   };
